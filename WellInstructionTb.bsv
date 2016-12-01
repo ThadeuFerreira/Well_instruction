@@ -45,7 +45,7 @@ module mkWellInstructionTb (Empty);
 	 
 	 // Priority: Small Crush > Crush > Big Crush > DIEHARD > NIST.
 	 n <= fromInteger (valueOf (N_SMALL_CRUSH));
-	 Int32WORD x <- rng.get(1);
+	 Int32WORD x <- rng.get(20000);
 	 
       endaction
       

@@ -98,6 +98,10 @@ module mkWellPRNG (IfcRandomNumberGenerator#(Int32WORD, Int32WORD));
 	state[13] <=      1165159;
 	state[14] <=      99349121;
 	state[15] <=      68083911;	
+	z0 <= 0;
+	z1 <= 0;
+	z2 <= 0;
+	state_i <= 0;
    endmethod: initialize
 
    method ActionValue#(Int32WORD ) get () ;
